@@ -2,7 +2,7 @@
 
 This assignment tests minimum skills and knowledge required to successfully kick start your career at Scandiweb.
 
-The test helps us to assess your level and it helps you to check whether your level is already good to join us as a Junior Developer.
+The test helps one to assess thier level and it helps you to check whether your level is already good to join Scandiweb as a Junior Developer.
 
 link to web test
 http://gibson.nelsoneltech.co.ke/
