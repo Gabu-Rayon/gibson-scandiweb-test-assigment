@@ -7,6 +7,8 @@ use app\controllers\ProductController;
 
 $router = new Router();
 
+//route the controllers
+
 $router->get('/', [ProductController::class, 'index']);
 
 $router->get('/addproduct', [ProductController::class, 'create']);
