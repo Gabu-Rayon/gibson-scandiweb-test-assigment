@@ -20,7 +20,7 @@
     <footer>
         <div class="row">
             <div class="d-flex justify-content-center">
-                Gibson Muriuki Scandiweb Test Assignment @2023
+                Muriuki Gibson Murimi Scandiweb Test Assignment @2023
             </div>
         </div>
     </footer>
