@@ -4,5 +4,4 @@ This assignment tests minimum skills and knowledge required to successfully kick
 
 The test helps one to assess their level and it helps you to check whether your level is already good to join Scandiweb as a Junior Developer.
 
-link to web test
-http://gibson.nelsoneltech.co.ke/
+
