@@ -11,9 +11,7 @@ class Database
 
     public function __construct()
     {
-        // $this ->pdo =  new PDO('mysql:host=localhost;port=3306;dbname=scandiweb-db-02', 'GabuRayon', 'localhost@12345#');
-          $this->pdo = new PDO('mysql:host=localhost;port=3306;dbname=betechatours_scandiweb_db', 'betechatours_gibson','@Nelsonel01');
-   
+        $this ->pdo =  new PDO('mysql:host=localhost;port=3306;dbname=scandiweb-db-02', 'GabuRayon', 'localhost@12345#');
         
         $this->pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         
