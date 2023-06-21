@@ -13,7 +13,6 @@ $router->get('/', [ProductController::class, 'index']);
 
 $router->get('/addproduct', [ProductController::class, 'create']);
 
-$router->post('/addproduct', [ProductController::class, 'create']);
 
 $router->post('/delete-product', [ProductController::class, 'delete']);
 

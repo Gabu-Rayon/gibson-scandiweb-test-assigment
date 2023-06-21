@@ -32,7 +32,7 @@
                                                          <span class="visually-hidden">Loading...</span>
                                                      </div>
                                                      <div class="invalid-feedback" id="skuFeedback">
-                                                         Please provide the SKU
+                                                        The sku field is required.
                                                      </div>
                                                  </div>
                                              </div>
@@ -43,7 +43,7 @@
                                                      <input required type="text" class="form-control" id="name"
                                                          value="<?= $product->data['name'] ?? '' ?>" name="name" placeholder="e.g Book ,Table, DVD">
                                                      <div class="invalid-feedback">
-                                                         Please provide the name
+                                                        The name field is required.
                                                      </div>
                                                  </div>
 
@@ -55,7 +55,7 @@
                                                      <input required type="number" class="form-control" id="price"
                                                          value="<?= $product->data['price'] ?? '' ?>" name="price" placeholder="$ 45, $ 2, $ 699 . . .">
                                                      <div class="invalid-feedback">
-                                                         Please provide the price
+                                                         The price field is required.
                                                      </div>
                                                  </div>
 
@@ -74,7 +74,7 @@
                                                          <?php endforeach ?>
                                                      </select>
                                                      <div class="invalid-feedback">
-                                                         Please choose a Product Type
+                                                         The type field is required.
                                                      </div>
                                                  </div>
                                              </div>
@@ -91,7 +91,7 @@
                                                                  min="1" step="1" name="size"
                                                                  value="<?= $product->data['size'] ?? '' ?>">
                                                              <div class="invalid-feedback">
-                                                                 Please provide the size
+                                                                 The size field is required.
                                                              </div>
                                                          </div>
                                                      </div>
@@ -107,7 +107,7 @@
                                                                  min="1" step="1" name="weight"
                                                                  value="<?= $product->data['weight'] ?? '' ?>">
                                                              <div class="invalid-feedback">
-                                                                 Please provide the weight
+                                                                 The weight field is required.
                                                              </div>
                                                          </div>
                                                      </div>
@@ -123,7 +123,7 @@
                                                                  name="height"
                                                                  value="<?= $product->data['height'] ?? '' ?>">
                                                              <div class="invalid-feedback">
-                                                                 Please provide the height
+                                                                The height field is required.
                                                              </div>
                                                          </div>
                                                      </div>
@@ -136,7 +136,7 @@
                                                                  name="width"
                                                                  value="<?= $product->data['width'] ?? '' ?>">
                                                              <div class="invalid-feedback">
-                                                                 Please provide the width
+                                                                 The width field is required.
                                                              </div>
                                                          </div>
                                                      </div>
@@ -149,7 +149,7 @@
                                                                  name="length"
                                                                  value="<?= $product->data['length'] ?? '' ?>">
                                                              <div class="invalid-feedback">
-                                                                 Please provide the length
+                                                                The length field is required.
                                                              </div>
                                                          </div>
                                                      </div>
