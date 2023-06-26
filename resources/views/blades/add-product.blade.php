@@ -69,7 +69,7 @@
 
                                              <div class="form-outline mb-4">
                                                  <label for="name" class="col-sm-2 col-form-label">
-                                                     <strong>TypeSwitcher</strong></label>
+                                                       </label>
                                                  <div class="col-sm-auto">
                                                      <select required class="form-select" id="productType"
                                                          name="type">
