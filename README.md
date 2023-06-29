@@ -53,7 +53,7 @@ Run PHP development server
         php -S localhost:8080
 Credits
 
-Codeholic: PHP for absolute beginners (https://yooutu.be/2eebptXfEvw)
+Codeholic: PHP for absolute beginners (https://www.youtube.com/watch?v=yXzWfZ4N4xU&t=17685s)
 
 Hosted 
 
