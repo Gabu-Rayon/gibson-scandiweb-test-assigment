@@ -34,7 +34,7 @@ Create Database
 
 Open terminal
 
-     Run cd /c/lampp/htdocs/folder-name
+     Run cd /c/xampp/htdocs/folder-name
      
 Git clone
 
@@ -53,7 +53,7 @@ Run PHP development server
         php -S localhost:8080
 Credits
 
-Codeholic: PHP for absolute beginners (https://yooutu.be/2eebptXfEvw
+Codeholic: PHP for absolute beginners (https://yooutu.be/2eebptXfEvw)
 
 Hosted 
 
