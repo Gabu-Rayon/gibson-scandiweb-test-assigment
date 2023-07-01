@@ -54,7 +54,7 @@
                                              </div>
 
                                              <div class="form-outline mb-4">
-                                                 <label for="name" class="col-sm-2 col-form-label"><strong>Price <i>
+                                                 <label for="price" class="col-sm-2 col-form-label"><strong>Price <i>
                                                              ($)</i> </strong></label>
                                                  <div class="col-sm-auto">
                                                      <input required type="number" class="form-control" id="price"
@@ -80,7 +80,7 @@
                                                          <?php endforeach ?>
                                                      </select>
                                                      <div class="invalid-feedback">
-                                                         The type field is required.
+                                                         Please select a product type.
                                                      </div>
                                                  </div>
                                              </div>
