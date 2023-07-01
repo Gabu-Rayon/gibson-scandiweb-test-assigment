@@ -22,48 +22,54 @@
                                  <div class="card" style="border-radius: 15px;">
                                      <div class="card-body p-5">
                                          <form method="POST" id="product_form" class="needs-validation" novalidate>
-                                            <div class="form-outline mb-4">
-                                                 <label for="sku" class="col-sm-2 col-form-label"><strong>SKU</strong></label>
+                                             <div class="form-outline mb-4">
+                                                 <label for="sku"
+                                                     class="col-sm-2 col-form-label"><strong>SKU</strong></label>
                                                  <div class="col-sm-auto">
                                                      <input required type="text" class="form-control" id="sku"
-                                                         value="<?= $product->data['sku'] ?? '' ?>" name="sku" placeholder="e.g sku56565">
+                                                         value="<?= $product->data['sku'] ?? '' ?>" name="sku"
+                                                         placeholder="e.g sku56565">
                                                      <div id="skuValidator" class="text-dark position-absolute d-none"
                                                          role="status">
                                                          <span class="visually-hidden">Loading...</span>
                                                      </div>
                                                      <div class="invalid-feedback" id="skuFeedback">
-                                                         Please provide the SKU
+                                                         The sku field is required.
                                                      </div>
                                                  </div>
                                              </div>
 
-                                            <div class="form-outline mb-4">
-                                                 <label for="name" class="col-sm-2 col-form-label"><strong>Name</strong></label>
+                                             <div class="form-outline mb-4">
+                                                 <label for="name"
+                                                     class="col-sm-2 col-form-label"><strong>Name</strong></label>
                                                  <div class="col-sm-auto">
                                                      <input required type="text" class="form-control" id="name"
-                                                         value="<?= $product->data['name'] ?? '' ?>" name="name" placeholder="e.g Book ,Table, DVD">
+                                                         value="<?= $product->data['name'] ?? '' ?>" name="name"
+                                                         placeholder="e.g Book ,Table, DVD">
                                                      <div class="invalid-feedback">
-                                                         Please provide the name
+                                                         The name field is required.
                                                      </div>
                                                  </div>
 
                                              </div>
 
-                                            <div class="form-outline mb-4">
-                                                 <label for="name" class="col-sm-2 col-form-label"><strong>Price  <i> ($)</i> </strong></label>
+                                             <div class="form-outline mb-4">
+                                                 <label for="name" class="col-sm-2 col-form-label"><strong>Price <i>
+                                                             ($)</i> </strong></label>
                                                  <div class="col-sm-auto">
                                                      <input required type="number" class="form-control" id="price"
-                                                         value="<?= $product->data['price'] ?? '' ?>" name="price" placeholder="$ 45, $ 2, $ 699 . . .">
+                                                         value="<?= $product->data['price'] ?? '' ?>" name="price"
+                                                         placeholder="$ 45, $ 2, $ 699 . . .">
                                                      <div class="invalid-feedback">
-                                                         Please provide the price
+                                                         The price field is required.
                                                      </div>
                                                  </div>
 
                                              </div>
 
-                                            <div class="form-outline mb-4">
+                                             <div class="form-outline mb-4">
                                                  <label for="name" class="col-sm-2 col-form-label">
-                                                    <strong>TypeSwitcher</strong></label>
+                                                     <strong>TypeSwitcher</strong></label>
                                                  <div class="col-sm-auto">
                                                      <select required class="form-select" id="productType"
                                                          name="type">
@@ -74,7 +80,7 @@
                                                          <?php endforeach ?>
                                                      </select>
                                                      <div class="invalid-feedback">
-                                                         Please choose a Product Type
+                                                         Please select a product type.
                                                      </div>
                                                  </div>
                                              </div>
@@ -83,38 +89,44 @@
                                              <!--product types-->
                                              <div id="productDescription" class="mb-5">
                                                  <fieldset class="d-none" id="dvdDescription">
-                                                    <div class="form-outline mb-4">
+                                                     <div><i>Please Provide Size</i></div>
+                                                     <br>
+                                                     <div class="form-outline mb-4">
                                                          <label for="size" class="col-sm-2 col-form-label">
-                                                            <strong>Size</strong> <i> (MB)</i></label>
+                                                             <strong>Size</strong> <i> (MB)</i></label>
                                                          <div class="col-sm-auto">
                                                              <input type="number" class="form-control" id="size"
                                                                  min="1" step="1" name="size"
                                                                  value="<?= $product->data['size'] ?? '' ?>">
                                                              <div class="invalid-feedback">
-                                                                 Please provide the size
+                                                                 The size field is required.
                                                              </div>
                                                          </div>
                                                      </div>
                                                  </fieldset>
 
                                                  <fieldset class="d-none" id="bookDescription">
-                                                    <div class="form-outline mb-4">
+                                                     <div><i>Please Provide Weight</i></div>
+                                                     <br>
+                                                     <div class="form-outline mb-4">
                                                          <label for="weight" class="col-sm-2 col-form-label">
-                                                              <strong>Weight</strong> <i> (KG)</i>
-                                                            </label>
+                                                             <strong>Weight</strong> <i> (KG)</i>
+                                                         </label>
                                                          <div class="col-sm-auto">
                                                              <input type="number" class="form-control" id="weight"
                                                                  min="1" step="1" name="weight"
                                                                  value="<?= $product->data['weight'] ?? '' ?>">
                                                              <div class="invalid-feedback">
-                                                                 Please provide the weight
+                                                                 The weight field is required.
                                                              </div>
                                                          </div>
                                                      </div>
                                                  </fieldset>
 
                                                  <fieldset class="d-none" id="furnitureDescription">
-                                                    <div class="form-outline mb-4">
+                                                     <div><i>Please Provide Dimensions in HxWxL</i></div>
+                                                     <br>
+                                                     <div class="form-outline mb-4">
                                                          <label for="height" class="col-sm-2 col-form-label">
                                                              <strong>Height</strong> <i> (CM)</i></label>
                                                          <div class="col-sm-auto">
@@ -123,11 +135,11 @@
                                                                  name="height"
                                                                  value="<?= $product->data['height'] ?? '' ?>">
                                                              <div class="invalid-feedback">
-                                                                 Please provide the height
+                                                                 The height field is required.
                                                              </div>
                                                          </div>
                                                      </div>
-                                                    <div class="form-outline mb-4">
+                                                     <div class="form-outline mb-4">
                                                          <label for="width" class="col-sm-2 col-form-label">
                                                              <strong>Width</strong> <i> (CM)</i></label>
                                                          <div class="col-sm-auto">
@@ -136,11 +148,11 @@
                                                                  name="width"
                                                                  value="<?= $product->data['width'] ?? '' ?>">
                                                              <div class="invalid-feedback">
-                                                                 Please provide the width
+                                                                 The width field is required.
                                                              </div>
                                                          </div>
                                                      </div>
-                                                    <div class="form-outline mb-4">
+                                                     <div class="form-outline mb-4">
                                                          <label for="length" class="col-sm-2 col-form-label">
                                                              <strong>Length</strong> <i> (CM)</i></label>
                                                          <div class="col-sm-auto">
@@ -149,7 +161,7 @@
                                                                  name="length"
                                                                  value="<?= $product->data['length'] ?? '' ?>">
                                                              <div class="invalid-feedback">
-                                                                 Please provide the length
+                                                                 The length field is required.
                                                              </div>
                                                          </div>
                                                      </div>

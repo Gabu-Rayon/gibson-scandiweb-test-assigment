@@ -71,13 +71,13 @@ if (window.location.pathname === "/addproduct") {
           setTimeout(() => {
             validator.classList.add("d-none");
             if (json.hasOwnProperty("sku")) {
-              target.setCustomValidity("This SKU already exists");
+              target.setCustomValidity("The sku has already been taken.");
               document.querySelector("#skuFeedback").textContent =
-                "This SKU already exists.";
+                "The sku has already been taken.";
             } else {
               target.setCustomValidity("");
               document.querySelector("#skuFeedback").textContent =
-                "Please provide an SKU.";
+                "The sku field is required.";
             }
           }, 200);
         });
@@ -94,7 +94,6 @@ if (window.location.pathname === "/addproduct") {
       },
       { once: true }
     );
-
   }
 
   submitValidation();
