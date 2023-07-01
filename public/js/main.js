@@ -71,13 +71,13 @@ if (window.location.pathname === "/addproduct") {
           setTimeout(() => {
             validator.classList.add("d-none");
             if (json.hasOwnProperty("sku")) {
-              target.setCustomValidity("The sku has already been taken.");
+              target.setCustomValidity("This SKU already exists");
               document.querySelector("#skuFeedback").textContent =
-                "The sku has already been taken.";
+                "This SKU already exists.";
             } else {
               target.setCustomValidity("");
               document.querySelector("#skuFeedback").textContent =
-                "The sku field is required.";
+                "Please provide an SKU.";
             }
           }, 200);
         });
