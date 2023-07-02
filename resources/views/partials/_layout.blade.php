@@ -10,7 +10,7 @@
 
     <!--javascript-->
     <script defer src="/public/../js/main.js"></script>
-    <title> Junior Developer Test Assignment -Scandiweb</title>
+   <title>Junior Developer Test Assignment -Scandiweb Product</title>
 </head>
 
 <body>
